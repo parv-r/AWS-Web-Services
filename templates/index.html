@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home Page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-color: #e0e0e0;
+        color: black;
+        text-align: center;
+      }
+      h1 {
+        padding: 20px 0px 20px 0px;
+        background-color: #606060;
+        color: #000;
+      }
+      h2{
+          padding: 5px;
+      }
+      .div {
+        margin: 25px auto;
+      }
+      .tabs {
+        display: block;
+        font-size: 18px;
+        margin: 10px 400px;
+        padding: 10px;
+        position: relative;
+        background-color: #a0a0a0;
+      }
+      a{
+        text-decoration: none;
+        color: #000;
+        display: block;
+      }
+      a:hover{
+          background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Amazon Web Services</h1>
+    <hr />
+    <div class="div">
+      <h2>EC2 Instance Services</h2>
+      <nav class="tabs">
+        <a href="/create_ec2">Create Instance</a>
+        <hr />
+        <a href="/start_ec2">Start Instance</a>
+        <hr />
+        <a href="/stop_ec2">Stop Instance</a>
+        <hr />
+        <a href="/running_ec2">Show Running Instances</a>
+        <hr />
+        <a href="/terminate_ec2">Terminate Instance</a>
+      </nav>
+    </div>
+
+    <div class="div">
+      <h2>S3 Bucket Services</h2>
+      <nav class="tabs">
+        <a href="/create_s3_bucket">Create S3 Bucket</a>
+        <hr />
+        <a href="/listbucket">List All S3 Buckets</a>
+        <hr />
+        <a href="/delete_s3_bucket">Delete S3 Bucket</a>
+      </nav>
+    </div>
+
+    <div class="div">
+      <h2>IAM User Services</h2>
+      <nav class="tabs">
+        <a href="/create_iam_user">Create IAM User</a>
+        <hr />
+        <a href="/listall_iam_users">List All IAM Users</a>
+        <hr />
+        <a href="/delete_iam_user">Delete IAM User</a>
+      </nav>
+    </div>
+  </body>
+</html>
